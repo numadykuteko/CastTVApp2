@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black_transparent">#00000000</color>
+    <color name="black_totally">#000000</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="black_large_transparent">#57000000</color>
+    <color name="half_black">#808080</color>
+
+    <color name="white_totally">#FFFFFF</color>
+    <color name="white_semi_transparent">#B2FFFFFF</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="colorHighlight">#2196F3</color>
+    <color name="colorBlueLight">#3397E3</color>
+    <color name="colorYellow">#F6A709</color>
+    <color name="colorYellowPressed">#AA7314</color>
+    <color name="blackHighlight">#131313</color>
+    <color name="blackSemiTransparent">#B2000000</color>
+    <color name="blackLowTransparent">#E6000000</color>
+    <color name="blackMediumTransparent">#80000000</color>
+    <color name="blackHaft">#4C4B4B</color>
+    <color name="blackNotHighlight">#232323</color>
+    <color name="redTotally">#AF0E26</color>
+    <color name="redLight">#F44336</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#3072DF</color>
+    <color name="blue_light">#187C79</color>
+    <color name="violet">#804CE4</color>
+    <color name="pink">#ED84C9</color>
+    <color name="orange">#FAAA60</color>
+    <color name="yellow">#ECAB00</color>
+    <color name="dark_violet">#313C68</color>
+    <color name="dark_violet_with_transparent">#33313C68</color>
+    <color name="light_blue">#00C5E8</color>
+
+    <color name="whiteTotally">#FFFFFF</color>
+    <color name="whiteSemiTransparent">#B2FFFFFF</color>
+    <color name="whitePressed">#f1f1f1</color>
+    <color name="text_enabled">#FFFFFFFF</color>
+    <color name="text_disabled">#4DFFFFFF</color>
+
+    <color name="icon_enabled">#FFFFFFFF</color>
+    <color name="icon_disabled">#FF63727B</color>
+    <color name="stroke_image_color">#40000000</color>
+
+    <color name="colorDisabled">#838383</color>
+
+    <!--    custom-->
+    <color name="nav_bg_1">#C862C4</color>
+    <color name="nav_bg_2">#7E32BF</color>
+    <color name="upgrade_bg_1">#DC0680</color>
+    <color name="upgrade_bg_2">#EC3434</color>
+
+    <color name="background_splash_color">#151C25</color>
+
+    <color name="blue_theme_color">#1F6CF1</color>
+    <color name="blue_theme_darker_color">#134BAC</color>
+    <color name="blue_theme_related_color">#2B91FF</color>
+    <color name="blue_theme_text_color">#000000</color>
+    <color name="blue_theme_lighter_text_color">#000000</color>
+
+    <color name="orange_theme_color">#F44336</color>
+    <color name="orange_theme_darker_color">#BD3329</color>
+    <color name="orange_theme_related_color">#FF5D52</color>
+    <color name="orange_theme_text_color">#000000</color>
+    <color name="orange_theme_lighter_text_color">#000000</color>
+
+    <color name="violet_theme_color">#673AB7</color>
+    <color name="violet_theme_darker_color">#5C32A6</color>
+    <color name="violet_theme_related_color">#9C27B0</color>
+    <color name="violet_theme_text_color">#000000</color>
+    <color name="violet_theme_lighter_text_color">#000000</color>
+
+    <color name="jade_theme_color">#22B2BD</color>
+    <color name="jade_theme_darker_color">#15767E</color>
+    <color name="jade_theme_related_color">#5AC4CA</color>
+    <color name="jade_theme_text_color">#000000</color>
+    <color name="jade_theme_lighter_text_color">#000000</color>
+
+    <!--  main  -->
+    <color name="activity_main_main_function_bg_1">#DC0680</color>
+    <color name="activity_main_main_function_bg_2">#EC3434</color>
+
+    <color name="activity_main_function_bg">#151717</color>
+
+    <color name="activity_main_primary_function_bg_1">#4CAF50</color>
+    <color name="activity_main_primary_function_bg_2">#009688</color>
+
+    <color name="activity_main_secondary_function_bg_1">#FF5722</color>
+    <color name="activity_main_secondary_function_bg_2">#2196F3</color>
+</resources>

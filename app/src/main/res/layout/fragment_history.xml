@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:background="@color/black_totally">
+
+        <LinearLayout
+            android:id="@+id/data_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/common_padding"
+            android:orientation="vertical">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/pull_to_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/data_list_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_data_error_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/no_data_error_img"
+                android:layout_width="@dimen/center_image_size"
+                android:layout_height="@dimen/center_image_size"
+                android:src="@drawable/ic_image"/>
+
+            <TextView
+                android:id="@+id/no_data_error_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_audio_no_audio"
+                android:layout_marginTop="@dimen/common_margin_top"
+                android:textColor="@color/whiteTotally"
+                android:textSize="@dimen/title_second_component_text_size"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loading_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/button_load_more_category"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_loading" />
+
+            <TextView
+                android:id="@+id/loading_file_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_second_component_text_size"
+                android:layout_marginTop="@dimen/common_margin_top_small"
+                android:text="@string/loading_file"
+                android:textColor="@color/whiteTotally"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

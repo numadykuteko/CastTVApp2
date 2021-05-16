@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="183dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:padding="@dimen/common_padding"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/item_home_selectable"
+            app:cardCornerRadius="@dimen/big_background_radius"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/title_third_component_text_size"
+                    android:textColor="@color/white_totally"
+                    android:textAllCaps="true"
+                    android:text="Samsung"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</layout>

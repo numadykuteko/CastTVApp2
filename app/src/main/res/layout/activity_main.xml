@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.cast.tv.screen.mirroring.iptv.ui.main.MainActivity">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/black_totally">
+                <LinearLayout
+                    android:id="@+id/main_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_main_header_height"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/common_padding"
+                    android:layout_marginStart="@dimen/common_margin_top_small"
+                    android:layout_marginEnd="@dimen/common_margin_top_small">
+
+                    <ImageView
+                        android:id="@+id/menu_img"
+                        android:layout_width="@dimen/activity_main_header_icon_width"
+                        android:layout_height="@dimen/activity_main_header_icon_height"
+                        android:src="@drawable/ic_menu"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:textColor="@color/whiteTotally"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/title_big_component_text_size"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/cast_img"
+                        android:layout_width="@dimen/activity_main_header_icon_width"
+                        android:layout_height="@dimen/activity_main_header_icon_height"
+
+                        android:src="@drawable/ic_cast"/>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:id="@+id/scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_top">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/content_main_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/common_margin_top_small"
+                        android:layout_marginEnd="@dimen/common_margin_top_small">
+
+                        <LinearLayout
+                            android:id="@+id/main_function"
+                            android:layout_width="@dimen/activity_main_main_function_width"
+                            android:layout_height="@dimen/activity_main_main_function_height"
+                            android:background="@drawable/bg_main_function"
+                            android:layout_marginTop="@dimen/common_margin_top_small"
+                            android:orientation="vertical"
+                            android:gravity="center"
+
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <ImageView
+                                android:layout_width="@dimen/activity_main_main_function_icon_width"
+                                android:layout_height="@dimen/activity_main_main_function_icon_height"
+                                android:src="@drawable/ic_screen_mirroring"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_margin_top_small"
+                                android:text="@string/activity_main_main_function"
+                                android:textColor="@color/whiteTotally"
+                                android:textSize="@dimen/title_main_component_text_size"
+                                android:textAllCaps="true"/>
+
+                        </LinearLayout>
+
+                        <include
+                            android:id="@+id/native_ads"
+                            layout="@layout/layout_native_control"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_padding_big"
+                            android:layout_marginBottom="@dimen/common_padding_big"
+
+                            app:layout_constraintTop_toBottomOf="@id/main_function"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <LinearLayout
+                            android:id="@+id/main_list_function"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/native_ads"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/common_padding_big"
+                            android:layout_marginBottom="@dimen/common_margin_top_big">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/activity_main_list_function_height"
+                                android:orientation="horizontal">
+                                <include
+                                    android:id="@+id/photo_cast"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/activity_vertical_margin"/>
+
+                                <include
+                                    android:id="@+id/video_cast"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/activity_vertical_margin"/>
+
+                                <include
+                                    android:id="@+id/audio_cast"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/activity_main_list_function_height"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin">
+                                <include
+                                    android:id="@+id/google_photo_cast"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/activity_vertical_margin"/>
+
+                                <include
+                                    android:id="@+id/google_drive_cast"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/activity_vertical_margin"/>
+
+                                <include
+                                    android:id="@+id/web_link_cast"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/activity_main_list_function_height"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin">
+                                <include
+                                    android:id="@+id/gallery_cast"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/activity_vertical_margin"/>
+
+                                <include
+                                    android:id="@+id/book_marks"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/activity_vertical_margin"/>
+
+                                <include
+                                    android:id="@+id/history"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/activity_main_list_function_height"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/activity_horizontal_margin">
+                                <include
+                                    android:id="@+id/iptv_cast"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/activity_vertical_margin"/>
+
+                                <include
+                                    android:id="@+id/screen_cast"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/activity_vertical_margin"/>
+
+                                <include
+                                    android:id="@+id/temp_2"
+                                    layout="@layout/item_home_function"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:visibility="invisible"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/navigation_view_home"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true"
+                android:background="@color/transparent" >
+
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_navigation">
+
+                    <LinearLayout
+                        android:id="@+id/header_navigation"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="@dimen/common_margin_top_big"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/common_margin_top_small"
+                            android:text="@string/app_name"
+                            android:textAllCaps="true"
+                            android:textColor="@color/whiteTotally"
+                            android:textSize="@dimen/title_main_component_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/content_navigation_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="140dp">
+
+                        <include
+                            android:id="@+id/nav_menu_item_home"
+                            layout="@layout/menu_view_navigation_item" />
+
+                        <include
+                            android:id="@+id/nav_menu_item_share"
+                            layout="@layout/menu_view_navigation_item" />
+
+                        <include
+                            android:id="@+id/nav_menu_item_contact"
+                            layout="@layout/menu_view_navigation_item" />
+
+                        <include
+                            android:id="@+id/nav_menu_item_rating"
+                            layout="@layout/menu_view_navigation_item" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/upgrade_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/bg_upgrade_button"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_upgrade"
+                        android:layout_marginStart="@dimen/common_margin_top_small"
+                        android:layout_marginEnd="@dimen/common_margin_top"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="60dp"
+                        android:layout_marginEnd="@dimen/common_margin_top_small"
+                        android:maxLines="2"
+                        android:textColor="@color/whiteTotally"
+                        android:textSize="@dimen/title_main_component_text_size"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/title_upgrade_button"/>
+                </LinearLayout>
+
+            </com.google.android.material.navigation.NavigationView>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+    </FrameLayout>
+</layout>

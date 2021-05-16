@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/bg_horizontal_video">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/item_video_horizontal_image_width"
+        android:layout_height="@dimen/item_video_horizontal_image_height"
+        app:cardElevation="3dp"
+        app:strokeWidth="0.5dp"
+        app:strokeColor="@color/stroke_image_color"
+        app:cardBackgroundColor="@color/activity_main_function_bg"
+        app:cardCornerRadius="@dimen/medium_background_radius">
+
+        <ImageView
+            android:id="@+id/video_view_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_no_image" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_grey_to_white" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/item_current_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_casting" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/common_padding"
+            android:layout_marginBottom="@dimen/common_padding">
+
+            <TextView
+                android:id="@+id/video_view_duration_tv"
+                android:textSize="@dimen/title_fourth_component_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whiteTotally"
+                android:background="@drawable/bg_duration"
+                android:paddingStart="@dimen/common_padding"
+                android:paddingEnd="@dimen/common_padding"
+                android:text="00:00"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/common_margin_top_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/video_view_name_tv"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="1"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="name name name name"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_margin_top_small"
+                android:textColor="@color/whiteTotally"
+                android:textSize="@dimen/title_third_component_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/video_view_date_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="@dimen/common_padding_small"
+                android:layout_marginBottom="@dimen/common_padding"
+                android:src="@drawable/ic_history"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/video_view_date_tv"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/video_view_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_fourth_component_text_size"
+                android:textColor="@color/whiteSemiTransparent"
+                android:maxLines="1"
+                android:layout_marginStart="@dimen/common_padding"
+                android:layout_marginBottom="@dimen/common_padding"
+                android:text="description dc v"
+                app:layout_constraintStart_toEndOf="@id/video_view_date_icon"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/item_bookmark_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="@dimen/common_padding_big"
+                android:layout_marginBottom="@dimen/common_padding"
+                android:src="@drawable/ic_bookmark_not_done"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+

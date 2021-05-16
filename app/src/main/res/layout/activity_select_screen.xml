@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@color/black_totally"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <LinearLayout
+                android:id="@+id/main_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_select_screen_header_height"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_marginStart="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_margin_top_small">
+
+                <ImageView
+                    android:id="@+id/back_img"
+                    android:layout_width="@dimen/activity_select_screen_header_icon_width"
+                    android:layout_height="@dimen/activity_select_screen_header_icon_height"
+                    android:src="@drawable/ic_back"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/activity_select_screen_name"
+                    android:textColor="@color/whiteTotally"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/title_big_component_text_size"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/content_select_screen_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/common_margin_top_small"
+                android:layout_marginEnd="@dimen/common_margin_top_small">
+
+                <LinearLayout
+                    android:id="@+id/data_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/common_padding"
+                    android:orientation="vertical">
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                        android:id="@+id/pull_to_refresh"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/data_list_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loading_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/button_load_more_category"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_loading" />
+
+                    <TextView
+                        android:id="@+id/loading_file_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/title_second_component_text_size"
+                        android:layout_marginTop="@dimen/common_margin_top_small"
+                        android:text="@string/loading_screen"
+                        android:textColor="@color/whiteTotally"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

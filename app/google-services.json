@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "814713027066",
+    "project_id": "bnx-player",
+    "storage_bucket": "bnx-player.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814713027066:android:3f76dd01d5e287f62d8c43",
+        "android_client_info": {
+          "package_name": "com.cast.tv.screen.mirroring.iptv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814713027066-1nie3hskqqor9qdnjjbjc8acv4meu8o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV1oboZro2nrKz9fn9nX9pBZJitUF2cTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814713027066-1nie3hskqqor9qdnjjbjc8acv4meu8o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

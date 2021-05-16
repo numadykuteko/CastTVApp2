@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.cast.tv.screen.mirroring.iptv"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 3
+        versionName "1.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField('String', 'open_app_id', '"ca-app-pub-3940256099942544/3419835294"')
+            buildConfigField('String', 'interstitial_splash_id', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'native_home_id', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'interstitial_screen_mirroring_id', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'interstitial_click_item_local_data_id', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'native_top_select_screen_id', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'native_click_item_local_data_id', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'native_preparing_id', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'interstitial_preparing_id', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'interstitial_google_photo_id', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'interstitial_google_drive_id', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'native_cate_iptv_id', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'interstitial_cate_iptv_id', '"ca-app-pub-3940256099942544/1033173712"')
+            resValue "string", "app_id", "ca-app-pub-3940256099942544~3347511713"
+            resValue "bool", "FIREBASE_ANALYTICS_DEACTIVATED", "false"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField('String', 'open_app_id', '"ca-app-pub-2767013993881421/5957538453"')
+            buildConfigField('String', 'interstitial_splash_id', '"ca-app-pub-2767013993881421/4868103470"')
+            buildConfigField('String', 'native_home_id', '"ca-app-pub-2767013993881421/9106731384"')
+            buildConfigField('String', 'interstitial_screen_mirroring_id', '"ca-app-pub-2767013993881421/7602078022"')
+            buildConfigField('String', 'interstitial_click_item_local_data_id', '"ca-app-pub-2767013993881421/9737286774"')
+            buildConfigField('String', 'native_top_select_screen_id', '"ca-app-pub-2767013993881421/7111123431"')
+            buildConfigField('String', 'native_click_item_local_data_id', '"ca-app-pub-2767013993881421/4994976421"')
+            buildConfigField('String', 'native_preparing_id', '"ca-app-pub-2767013993881421/3371188979"')
+            buildConfigField('String', 'interstitial_preparing_id', '"ca-app-pub-2767013993881421/9864159729"')
+            buildConfigField('String', 'interstitial_google_photo_id', '"ca-app-pub-2767013993881421/3179617287"')
+            buildConfigField('String', 'interstitial_google_drive_id', '"ca-app-pub-2767013993881421/1674963920"')
+            buildConfigField('String', 'native_cate_iptv_id', '"ca-app-pub-2767013993881421/1694859817"')
+            buildConfigField('String', 'interstitial_cate_iptv_id', '"ca-app-pub-2767013993881421/2796473904"')
+            resValue "string", "app_id", "ca-app-pub-2767013993881421~6249661423"
+
+            resValue "bool", "FIREBASE_ANALYTICS_DEACTIVATED", "false"
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "com.google.android.material:material:1.2.1"
+
+    implementation "com.amitshekhar.android:rx2-android-networking:1.0.1"
+
+    implementation "androidx.room:room-rxjava2:2.2.5"
+    kapt "androidx.room:room-compiler:2.2.5"
+
+    implementation "com.github.bumptech.glide:glide:4.10.0"
+    kapt "com.github.bumptech.glide:compiler:4.10.0"
+
+    implementation "com.google.code.gson:gson:2.8.6"
+
+    implementation "io.reactivex.rxjava2:rxjava:2.2.6"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    kapt "androidx.lifecycle:lifecycle-compiler:2.2.0"
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.20'
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0"
+
+    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
+
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+
+    // ads
+    implementation 'com.google.android.gms:play-services-ads:19.8.0'
+    implementation 'com.github.eGame-Global:AndMuduleAds:1.3.3'
+
+    //kotlin
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
+
+    // cast
+    // noinspection GradleCompatible
+    implementation 'androidx.mediarouter:mediarouter:1.2.2'
+    implementation 'com.google.android.gms:play-services-cast-framework:19.0.0'
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.4'
+
+    implementation 'com.otaliastudios:transcoder:0.10.0'
+
+    implementation 'com.jsibbold:zoomage:1.3.1'
+    implementation 'com.github.eGame-Global:AndModuleRate:1.0.9'
+
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://repository.aspose.com/repo/" }
+
+}

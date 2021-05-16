@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/black_totally"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <LinearLayout
+                android:id="@+id/main_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_prepare_screen_header_height"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_marginStart="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_margin_top_small">
+
+                <ImageView
+                    android:id="@+id/back_img"
+                    android:layout_width="@dimen/activity_prepare_screen_header_icon_width"
+                    android:layout_height="@dimen/activity_prepare_screen_header_icon_height"
+                    android:src="@drawable/ic_back"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/activity_prepare_screen_name"
+                    android:textColor="@color/whiteTotally"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/title_big_component_text_size"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/content_prepare_screen_activity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/common_margin_top_big"
+                android:layout_marginBottom="@dimen/common_margin_top"
+                android:layout_marginStart="@dimen/common_margin_top_small"
+                android:layout_marginEnd="@dimen/common_margin_top_small">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/activity_main_function_bg"
+                        app:cardCornerRadius="@dimen/medium_background_radius">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_prepare_screen_note"
+                            android:textColor="@color/whiteTotally"
+                            android:layout_marginTop="@dimen/common_margin_top"
+                            android:layout_marginBottom="@dimen/common_margin_top"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <include
+                        android:id="@+id/native_ads"
+                        layout="@layout/layout_small_native_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_margin_top_big" />
+
+                    <LinearLayout
+                        android:id="@+id/step_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/common_margin_top_big">
+                        <ImageView
+                            android:id="@+id/check_step_1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_check_white"/>
+
+                        <TextView
+                            android:id="@+id/text_step_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_prepare_screen_step_1"
+                            android:textSize="@dimen/title_first_component_text_size"
+                            android:textColor="@color/gray_btn_bg_color"
+                            android:layout_marginStart="@dimen/common_margin_top"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/step_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/common_margin_top">
+                        <ImageView
+                            android:id="@+id/check_step_2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_check_white"/>
+
+                        <TextView
+                            android:id="@+id/text_step_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_prepare_screen_step_2"
+                            android:textSize="@dimen/title_first_component_text_size"
+                            android:textColor="@color/gray_btn_bg_color"
+                            android:layout_marginStart="@dimen/common_margin_top"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/step_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/common_margin_top">
+                        <ImageView
+                            android:id="@+id/check_step_3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_check_white"/>
+
+                        <TextView
+                            android:id="@+id/text_step_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_prepare_screen_step_3"
+                            android:textSize="@dimen/title_first_component_text_size"
+                            android:textColor="@color/gray_btn_bg_color"
+                            android:layout_marginStart="@dimen/common_margin_top"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/loading_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/common_margin_top">
+                        <ProgressBar
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_prepare_screen_loading"
+                            android:textSize="@dimen/title_first_component_text_size"
+                            android:textColor="@color/gray_btn_bg_color"
+                            android:layout_marginStart="@dimen/common_margin_top"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/btn_start_connect"
+                android:layout_width="240dp"
+                android:layout_height="@dimen/big_button_height"
+                android:layout_marginBottom="@dimen/common_margin_top"
+                android:background="@drawable/bg_main_function"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_cast"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/common_margin_top_small"
+                        android:text="@string/activity_prepare_screen_start_connect"
+                        android:textSize="@dimen/title_first_component_text_size"
+                        android:textStyle="bold"
+                        android:textColor="@color/whiteTotally" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

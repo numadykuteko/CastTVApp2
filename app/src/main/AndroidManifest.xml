@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cast.tv.screen.mirroring.iptv">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.android.setting.permission.ALLSHARE_CAST_SERVICE"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <application
+        android:name="com.cast.tv.screen.mirroring.iptv.CastApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/BlueAppTheme"
+        tools:replace="icon"
+        tools:targetApi="q">
+
+        <meta-data
+            android:name="firebase_analytics_collection_deactivated"
+            android:value="@bool/FIREBASE_ANALYTICS_DEACTIVATED" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.cast.tv.screen.mirroring.iptv.utils.chromecast.CastOptionsProvider" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.splash.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.main.MainActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.photo.PhotoActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.video.VideoActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.audio.AudioActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.googledrive.GoogleDriveActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.googlephoto.GooglePhotoActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.screencast.selectscreen.SelectScreenActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.screencast.preparescreen.PrepareScreenActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.screencast.errorscreen.ErrorScreenActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/AppThemeFullScreen"/>
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.gallery.GalleryActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme"/>
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.bookmark.BookmarkActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme"/>
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.history.HistoryActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme"/>
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.weblink.WebLinkActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme"/>
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.iptv.category.CategoryActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme"/>
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.iptv.channel.ChannelActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/BlueAppTheme"/>
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.player.PlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeNoActionBar" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.ui.imageviewer.ViewerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeNoActionBar" />
+
+        <activity
+            android:name="com.cast.tv.screen.mirroring.iptv.utils.chromecast.ExpandedControlsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cast.tv.screen.mirroring.iptv.ui.main.MainActivity"/>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.cast.tv.screen.mirroring.iptv.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name="com.cast.tv.screen.mirroring.iptv.utils.chromecast.MediaWebService" />
+
+        <service
+            android:name="com.cast.tv.screen.mirroring.iptv.service.AppFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

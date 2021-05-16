@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppTheme">
+        <attr name="base_color" format="color"/>
+        <attr name="base_darker_color" format="color"/>
+        <attr name="base_text_color" format="color"/>
+        <attr name="base_lighter_text_color" format="color"/>
+        <attr name="base_related_color" format="color"/>
+        <attr name="base_setting_icon" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_content_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/bg_horizontal_video">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/item_folder_image_width"
+        android:layout_height="@dimen/item_folder_image_height"
+        android:layout_marginStart="@dimen/common_padding"
+        app:cardElevation="3dp"
+        app:strokeWidth="0.5dp"
+        app:strokeColor="@color/stroke_image_color"
+        app:cardBackgroundColor="@color/activity_main_function_bg"
+        app:cardCornerRadius="@dimen/medium_background_radius">
+
+        <ImageView
+            android:id="@+id/item_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/common_padding"
+            android:layout_marginBottom="@dimen/common_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_audio_color" />
+
+        <View
+            android:id="@+id/item_overlay_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_grey_overlay"
+            android:alpha="0.4"/>
+
+        <ImageView
+            android:id="@+id/item_video_play_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_play_button" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/item_current_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_casting" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/common_margin_top_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/item_name_view"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="1"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="name name name nam"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_margin_top_small"
+                android:textColor="@color/whiteTotally"
+                android:textSize="@dimen/title_third_component_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/item_description_view"
+                app:layout_constraintHorizontal_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_fourth_component_text_size"
+                android:textColor="@color/whiteSemiTransparent"
+                android:maxLines="1"
+                android:layout_marginBottom="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_margin_top_small"
+                android:text="description dc v"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+

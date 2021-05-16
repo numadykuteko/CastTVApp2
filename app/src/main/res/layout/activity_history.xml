@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@color/black_totally"
+
+            app:layout_constraintBottom_toTopOf="@id/castMiniController"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <LinearLayout
+                android:id="@+id/main_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_history_header_height"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_marginStart="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_margin_top_small">
+
+                <ImageView
+                    android:id="@+id/back_img"
+                    android:layout_width="@dimen/activity_history_header_icon_width"
+                    android:layout_height="@dimen/activity_history_header_icon_height"
+                    android:src="@drawable/ic_back"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/activity_history_name"
+                    android:textColor="@color/whiteTotally"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/title_big_component_text_size"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/cast_img"
+                    android:layout_width="@dimen/activity_history_header_icon_width"
+                    android:layout_height="@dimen/activity_history_header_icon_height"
+                    android:src="@drawable/ic_cast"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_history_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/common_margin_top_small"
+                android:layout_marginEnd="@dimen/common_margin_top_small"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_header_list_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_history_tab_bar_height"
+                    android:layout_marginTop="@dimen/common_padding_big"
+                    android:orientation="vertical">
+
+                    <com.ogaclejapan.smarttablayout.SmartTabLayout
+                        android:id="@+id/tab_type_filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_history_tab_bar_height"
+                        android:background="@drawable/bg_tab_view"
+
+                        app:stl_indicatorThickness="@dimen/activity_history_tab_bar_height"
+                        app:stl_indicatorWidth="auto"
+                        app:stl_indicatorInterpolation="smart"
+                        app:stl_indicatorCornerRadius="@dimen/big_background_radius"
+                        app:stl_indicatorColor="@color/activity_main_main_function_bg_1"
+
+                        app:stl_underlineColor="@color/activity_main_main_function_bg_1"
+                        app:stl_underlineThickness="0dp"
+
+                        app:stl_dividerThickness="0dp"
+
+                        app:stl_customTabTextLayoutId="@layout/custom_small_tab_indicator"
+                        app:stl_customTabTextViewId="@id/custom_text"
+
+                        app:stl_distributeEvenly="true" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_body_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpager_type_filter"
+                        android:layout_marginTop="@dimen/common_padding_big"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/castMiniController"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            class="com.google.android.gms.cast.framework.media.widget.MiniControllerFragment"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

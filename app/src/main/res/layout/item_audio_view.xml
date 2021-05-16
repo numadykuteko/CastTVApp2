@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/common_padding_big"
+    android:padding="@dimen/common_padding">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/medium_background_radius"
+        app:cardBackgroundColor="@color/activity_main_function_bg"
+        android:foreground="?android:attr/selectableItemBackground">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="67dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_audio"
+                android:alpha="0.6" />
+
+            <TextView
+                android:id="@+id/item_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_fourth_component_text_size"
+                android:textColor="@color/whiteTotally"
+                android:alpha="0.6"
+                android:text="hehe"
+                android:layout_marginTop="@dimen/common_margin_top"
+                android:layout_marginStart="@dimen/common_margin_top"
+                android:layout_marginEnd="@dimen/common_margin_top"/>
+        </LinearLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/item_current_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_casting" />
+
+        <ImageView
+            android:id="@+id/item_bookmark_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="@dimen/common_padding_big"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:src="@drawable/ic_bookmark_not_done"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+

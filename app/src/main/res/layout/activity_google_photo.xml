@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@color/black_totally"
+
+            app:layout_constraintBottom_toTopOf="@id/castMiniController"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <LinearLayout
+                android:id="@+id/main_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_google_photo_header_height"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_marginStart="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_margin_top_small">
+
+                <ImageView
+                    android:id="@+id/back_img"
+                    android:layout_width="@dimen/activity_google_photo_header_icon_width"
+                    android:layout_height="@dimen/activity_google_photo_header_icon_height"
+                    android:src="@drawable/ic_back"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/activity_google_photo_name"
+                    android:textColor="@color/whiteTotally"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/title_big_component_text_size"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/cast_img"
+                    android:layout_width="@dimen/activity_google_photo_header_icon_width"
+                    android:layout_height="@dimen/activity_google_photo_header_icon_height"
+                    android:src="@drawable/ic_cast"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/content_google_photo_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/common_margin_bottom_pass_navigation"
+                android:layout_marginStart="@dimen/common_margin_top_small"
+                android:layout_marginEnd="@dimen/common_margin_top_small">
+
+                <LinearLayout
+                    android:id="@+id/step_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentTop="true">
+                    <ImageView
+                        android:id="@+id/check_step_1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_check_white"/>
+
+                    <TextView
+                        android:id="@+id/text_step_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_google_photo_step_1"
+                        android:textSize="@dimen/title_second_component_text_size"
+                        android:textColor="@color/gray_btn_bg_color"
+                        android:layout_marginStart="@dimen/common_margin_top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/step_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_below="@id/step_1"
+                    android:layout_marginTop="@dimen/common_margin_top">
+                    <ImageView
+                        android:id="@+id/check_step_2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_check_white"/>
+
+                    <TextView
+                        android:id="@+id/text_step_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_google_photo_step_2"
+                        android:textSize="@dimen/title_second_component_text_size"
+                        android:textColor="@color/gray_btn_bg_color"
+                        android:layout_marginStart="@dimen/common_margin_top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/step_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_below="@id/step_2"
+                    android:layout_marginTop="@dimen/common_margin_top">
+                    <ImageView
+                        android:id="@+id/check_step_3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_check_white"/>
+
+                    <TextView
+                        android:id="@+id/text_step_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_google_photo_step_3"
+                        android:textSize="@dimen/title_second_component_text_size"
+                        android:textColor="@color/gray_btn_bg_color"
+                        android:layout_marginStart="@dimen/common_margin_top"/>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/native_ads"
+                    layout="@layout/layout_small_native_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_below="@id/step_3"
+                    android:layout_marginTop="@dimen/common_margin_bottom_pass_navigation" />
+                
+                <LinearLayout
+                    android:id="@+id/access_button_area"
+                    android:layout_width="@dimen/big_button_width"
+                    android:layout_height="@dimen/big_button_height"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_google_photo_function"
+                    android:layout_marginBottom="@dimen/common_margin_top"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_google_photo"/>
+
+                    <TextView
+                        android:id="@+id/access_button_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/title_second_component_text_size"
+                        android:text="@string/activity_google_photo_access"
+                        android:textColor="@color/whiteTotally"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/common_margin_top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_permission_area"
+                    android:layout_width="@dimen/big_button_width"
+                    android:layout_height="@dimen/big_button_height"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_main_function"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/no_permission_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/title_second_component_text_size"
+                        android:text="@string/accept_permission_show_file"
+                        android:textColor="@color/whiteTotally"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/castMiniController"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            class="com.google.android.gms.cast.framework.media.widget.MiniControllerFragment"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

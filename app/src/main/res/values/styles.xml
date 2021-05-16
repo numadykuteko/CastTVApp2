@@ -1,0 +1,122 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue_theme_color</item>
+        <item name="colorPrimaryDark">@color/blue_theme_darker_color</item>
+        <item name="colorAccent">@color/blue_theme_color</item>
+        <item name="android:statusBarColor">@color/blue_theme_color</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="searchViewStyle">@style/searchViewStyle</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/black_totally</item>
+        <item name="android:navigationBarColor">@color/black_totally</item>
+        <item name="materialButtonStyle">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog</item>
+    </style>
+
+    <style name="BlueAppTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue_theme_color</item>
+        <item name="colorPrimaryDark">@color/blue_theme_darker_color</item>
+        <item name="colorAccent">@color/blue_theme_color</item>
+        <item name="android:statusBarColor">@color/blue_theme_color</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="searchViewStyle">@style/searchViewStyle</item>
+        <item name="base_color">@color/blue_theme_color</item>
+        <item name="base_darker_color">@color/blue_theme_darker_color</item>
+        <item name="base_related_color">@color/blue_theme_related_color</item>
+        <item name="base_text_color">@color/blue_theme_text_color</item>
+        <item name="base_lighter_text_color">@color/blue_theme_text_color</item>
+    </style>
+
+    <style name="OrangeAppTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/orange_theme_color</item>
+        <item name="colorPrimaryDark">@color/orange_theme_darker_color</item>
+        <item name="colorAccent">@color/orange_theme_color</item>
+        <item name="android:statusBarColor">@color/orange_theme_color</item>
+        <item name="base_color">@color/orange_theme_color</item>
+        <item name="base_darker_color">@color/orange_theme_darker_color</item>
+        <item name="base_related_color">@color/orange_theme_related_color</item>
+        <item name="base_text_color">@color/orange_theme_text_color</item>
+        <item name="base_lighter_text_color">@color/orange_theme_lighter_text_color</item>
+    </style>
+
+    <style name="VioletAppTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/violet_theme_color</item>
+        <item name="colorPrimaryDark">@color/violet_theme_darker_color</item>
+        <item name="colorAccent">@color/violet_theme_color</item>
+        <item name="android:statusBarColor">@color/violet_theme_color</item>
+        <item name="base_color">@color/violet_theme_color</item>
+        <item name="base_darker_color">@color/violet_theme_darker_color</item>
+        <item name="base_related_color">@color/violet_theme_related_color</item>
+        <item name="base_text_color">@color/violet_theme_text_color</item>
+        <item name="base_lighter_text_color">@color/violet_theme_lighter_text_color</item>
+    </style>
+
+    <style name="JadeAppTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/jade_theme_color</item>
+        <item name="colorPrimaryDark">@color/jade_theme_darker_color</item>
+        <item name="colorAccent">@color/jade_theme_color</item>
+        <item name="android:statusBarColor">@color/jade_theme_color</item>
+        <item name="base_color">@color/jade_theme_color</item>
+        <item name="base_darker_color">@color/jade_theme_related_color</item>
+        <item name="base_related_color">@color/jade_theme_related_color</item>
+        <item name="base_text_color">@color/jade_theme_text_color</item>
+        <item name="base_lighter_text_color">@color/jade_theme_lighter_text_color</item>
+    </style>
+
+    <style name="searchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">@color/black_overlay</item>
+        <item name="android:textColor">@color/black_totally</item>
+        <item name="closeIconVisible">false</item>
+        <item name="closeIconEnabled">false</item>
+        <item name="closeIconSize">0dp</item>
+    </style>
+
+    <style name="AppThemeFullScreen" parent="Theme.Design.Light.NoActionBar">
+        <item name="colorPrimary">?attr/base_color</item>
+        <item name="colorPrimaryDark">?attr/base_darker_color</item>
+        <item name="colorAccent">?attr/base_color</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="materialButtonStyle">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog</item>
+        <item name="android:statusBarColor">@color/jade_theme_color</item>
+        <item name="base_color">@color/jade_theme_color</item>
+        <item name="base_darker_color">@color/jade_theme_related_color</item>
+        <item name="base_related_color">@color/jade_theme_related_color</item>
+        <item name="base_text_color">@color/jade_theme_text_color</item>
+        <item name="base_lighter_text_color">@color/jade_theme_lighter_text_color</item>
+    </style>
+
+    <style name="checkbox_style">
+        <item name="buttonTint">@color/white_totally</item>
+    </style>
+
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">     @android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="RateUsDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="backgroundColor">@color/colorWhite</item>
+        <item name="paddingEnd">20dp</item>
+        <item name="paddingStart">20dp</item>
+    </style>
+
+    <style name="OptimalDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+</resources>

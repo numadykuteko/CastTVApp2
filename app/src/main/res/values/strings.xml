@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">Cast Tv App</string>
+
+    <string name="header_error_text">Oops…</string>
+    <string name="error_text">Sorry…</string>
+    <string name="confirm_text">OK</string>
+    <string name="understood_text">OK! Understood</string>
+    <string name="loading_text">Loading…</string>
+    <string name="download_not_success_text">Download not success…</string>
+    <string name="thank_you_text">Thank you</string>
+    <string name="confirm_message">Are you sure?</string>
+    <string name="confirm_cancel_current_action">Are you sure to stop this action? This might interrupt your data sync.</string>
+    <string name="confirm_override_file">This file is existed, do you want to override it?</string>
+    <string name="sorry_text">Sorry</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    <string name="warning_text">Warning</string>
+    <string name="download_text">Download</string>
+    <string name="success_text">success</string>
+    <string name="please_wait_text">Please wait a moment</string>
+    <string name="please_input_name_text">Please input file name.</string>
+    <string name="exit_text">Exit</string>
+    <string name="downloading_text">Download</string>
+    <string name="downloading_from_gg_drive_text">Loading from cloud server</string>
+    <string name="loading_from_local_text">Loading from local file</string>
+    <string name="not_now_text">Not now</string>
+    <string name="agree_text">Agree</string>
+    <string name="searching_text">Search data…</string>
+    <string name="search_text">Search</string>
+    <string name="not_show_again_text">Not show again</string>
+    <string name="save_fail_text">Saved fail!</string>
+    <string name="preparing_data_text">Preparing data…</string>
+    <string name="applying_data_text">Apply data…</string>
+    <string name="guide_text">Select file guide</string>
+    <string name="notice_text">Notice!</string>
+    <string name="saving_text">Saving</string>
+    <string name="saved_text">Saved!</string>
+    <string name="save_text">Save</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="cancelling_text">Cancelling…</string>
+    <string name="retry_text">Retry</string>
+    <string name="deleted_text">Deleted!</string>
+    <string name="deleting_text">Deleting…</string>
+    <string name="delete_success_text">Delete success…</string>
+    <string name="delete_fail_text">Can not delete now…</string>
+    <string name="loading_ads_text">Loading Ads</string>
+    <string name="cancel_success_text">Cancel successful!</string>
+    <string name="thankyou_text">Thank you</string>
+    <string name="turn_off_success_text">Turn OFF successful!</string>
+    <string name="system_data_issue_text">Can not complete this action. Please try again.</string>
+    <string name="can_not_connect_to_network_text">Application can not connect to network.</string>
+    <string name="toast_about_online_mode">Network reconnect. You are in online mode now.</string>
+    <string name="connect_to_network_success_text">Connect to network successful.</string>
+    <string name="function_not_support_text">This function is not supported now.</string>
+    <string name="description_time_just_now">Just now</string>
+    <string name="description_time_minute">minute</string>
+    <string name="description_time_hour">hour</string>
+    <string name="description_time_day">day</string>
+    <string name="description_time_month">month</string>
+    <string name="description_time_year">year</string>
+    <string name="description_time_ago">ago</string>
+    <string name="title_need_permission">Permission Request</string>
+    <string name="title_need_permission_fail">Permission Request Fail</string>
+    <string name="couldnt_get_file_now">Application could not get local file now. Please retry later.</string>
+    <string name="couldnt_create_file_now">Application could not create file now. Please retry later.</string>
+    <string name="need_permission_to_get_file">Application need Read External Storage permission to get local files. </string>
+    <string name="need_permission_to_create_file">Application need Write External Storage permission to create files. </string>
+    <string name="get_file_now">Application will get local file right now.</string>
+    <string name="create_file_now">Application will create file right now.</string>
+    <string name="system_data_issue">Data is not valid. Please try again.</string>
+    <string name="share_file_title">Share this file</string>
+    <string name="image_type">image/*</string>
+    <string name="share_chooser">Select app to send message…</string>
+    <string name="guide_file_item">Hold to re-order</string>
+    <string name="rate_us_title">Rate us</string>
+    <string name="rate_us_content">If you enjoy, how about rating our app? It would be our happiness and honored. \nThank you for your support. \n</string>
+    <string name="example_password">Password</string>
+    <string name="example_re_enter_password">Retype password</string>
+    <string name="example_page">Enter page number</string>
+    <string name="enter_password_here">Please enter password</string>
+    <string name="enter_old_password_here">Please enter old password</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="output_file"><i>Output: </i></string>
+    <string name="output_folder"><i>Folder: </i></string>
+    <string name="can_not_open_folder">Can not open folder now.</string>
+    <string name="can_not_open_file">Can not open file now.</string>
+    <string name="can_not_select_file">Select file not successfully. Please choose file from Local storage or Google drive app only.</string>
+    <string name="can_not_select_file_from_google_drive">Error while download file from Cloud server.</string>
+    <string name="back_to_home">Exit function</string>
+    <string name="view_file">View file</string>
+    <string name="load_file_successfully">Loaded successfully</string>
+    <string name="guide_to_select_multiple">Long touch to item to get multiple files.</string>
+    <string name="loading_from_google_drive">Loading from cloud server. This may take a minute.</string>
+    <string name="prefix_for_google_drive">File_from_cloud_server_</string>
+    <string name="confirm_delete_file">Are you sure to delete this file permanently? You can NOT restore it later.</string>
+    <string name="default_notification_channel_id">Cast Tv App</string>
+    <string name="open_file">Select app</string>
+    <string name="open_file_error">No app to read this File</string>
+    <string name="accept_permission_show_file">Accept storage permission</string>
+    <string name="loading_file">Loading files…</string>
+    <string name="loading_screen">Loading screens…</string>
+    <string name="loading_category">Loading tv category…</string>
+    <string name="loading_channel">Loading channel…</string>
+    <string name="select_file_title">Select files</string>
+    <string name="package_not_found_title">App not found</string>
+    <string name="package_not_found_message">We can not find this application. Do you want to install it from Google Play?</string>
+    <string name="can_not_open_google_play">Can not open Google Play.</string>
+    <string name="back_button">Go back</string>
+    <string name="can_not_action_option_now">Can not action this option now.</string>
+    <string name="prepare_connection">Prepare connection…</string>
+    <!--  cast  -->
+    <string name="cast_media_route_menu_title">Play on&#8230;</string>
+    <string name="cast_please_connect_cast_first">Please connect to Chromecast device first. Please be sure that TV and Phone connect to same Wifi.</string>
+    <string name="cast_start_casting_message">Preparing data…</string>
+    <string name="cast_start_casting_success">Start connect to Chromecast device success.</string>
+    <string name="cast_start_casting_error">Sorry. We can not connect to Chromecast. Please be sure that TV and Phone connect to same Wifi.</string>
+    <string name="cast_stop_casting_success">Stop connect to Chromecast device success.</string>
+    <string name="cast_start_casting_playing_fail">Sorry. We can not cast this file now.</string>
+
+    <!--  file option  -->
+    <string name="file_option_share">Share</string>
+    <string name="file_option_upload">Upload</string>
+    <string name="file_option_open">Open</string>
+    <string name="file_option_print">Print</string>
+
+    <!--  navigation  -->
+    <string name="title_navigation_home">Home</string>
+    <string name="title_navigation_share">Share</string>
+    <string name="title_navigation_contact">Contact</string>
+    <string name="title_navigation_rate">Rating</string>
+    <string name="title_upgrade_button">Upgrade to premium grade</string>
+
+    <!--  main  -->
+    <string name="activity_main_main_function">Screen mirroring</string>
+    <string name="activity_main_photo_cast_name">Photo</string>
+    <string name="activity_main_video_cast_name">Video</string>
+    <string name="activity_main_audio_cast_name">Audio</string>
+    <string name="activity_main_google_drive_cast_name">Google drive</string>
+    <string name="activity_main_google_photo_cast_name">Google photo</string>
+    <string name="activity_main_weblink_cast_name">Web Link</string>
+    <string name="activity_main_gallery_cast_name">Gallery</string>
+    <string name="activity_main_history_name">History</string>
+    <string name="activity_main_bookmark_name">Bookmarks</string>
+    <string name="activity_main_iptv_name">IPTV</string>
+    <string name="activity_main_screen_mirror">Screen mirror</string>
+
+    <!--  photo  -->
+    <string name="activity_photo_name">Photos</string>
+    <string name="activity_photo_no_photo">No photo found</string>
+
+    <!--  video  -->
+    <string name="activity_video_name">Videos</string>
+    <string name="activity_video_no_video">No video found</string>
+
+    <!--  audio  -->
+    <string name="activity_audio_name">Audio</string>
+    <string name="activity_audio_no_audio">No audio found</string>
+
+    <!--  google drive  -->
+    <string name="activity_google_drive_name">Google drive</string>
+    <string name="activity_google_drive_access">Go to Google Drive</string>
+    <string name="activity_google_drive_not_valid_file">We only support casting Image, Video and Music file. Please choose other file. Thank you!</string>
+    <string name="activity_google_drive_step_1">Step 1: Click button open Google drive</string>
+    <string name="activity_google_drive_step_2">Step 2: Select file to cast on screen</string>
+    <string name="activity_google_drive_step_3">Step 3: Select TV (if not connected yet)</string>
+
+    <!--  google photo  -->
+    <string name="activity_google_photo_name">Google photo</string>
+    <string name="activity_google_photo_access">Go to Google Photo</string>
+    <string name="activity_google_photo_not_valid_file">We only support casting Image, Video and Music file. Please choose other file. Thank you!</string>
+    <string name="activity_google_photo_step_1">Step 1: Click button open Google photo</string>
+    <string name="activity_google_photo_step_2">Step 2: Select file to cast on screen</string>
+    <string name="activity_google_photo_step_3">Step 3: Select TV (if not connected yet)</string>
+
+    <!--  select screen  -->
+    <string name="activity_select_screen_name">Select screen</string>
+    <string name="activity_select_screen_confirm_reconnect">You have connected to %1$s, do you want to re-connect?</string>
+
+    <!--  prepare screen  -->
+    <string name="activity_prepare_screen_name">Preparing</string>
+    <string name="activity_prepare_screen_note">Please be sure your phone and TV connect to same Wifi. And your TV should support Miracast.</string>
+    <string name="activity_prepare_screen_step_1">Prepare for drivers</string>
+    <string name="activity_prepare_screen_step_2">Scan for TVs</string>
+    <string name="activity_prepare_screen_step_3">Detecting models</string>
+    <string name="activity_prepare_screen_step_4">Complete connections</string>
+    <string name="activity_prepare_screen_loading">Loading…</string>
+    <string name="activity_prepare_screen_start_connect">Start connect</string>
+    <string name="activity_prepare_screen_confirm_exit">Do you want to stop screen casting connect?</string>
+    <string name="activity_prepare_screen_error">Sorry, we can not connect to any Miracast. Please be sure that TV and Phone connect to same Wifi.</string>
+
+    <!--  error screen  -->
+    <string name="activity_error_screen_text">Sorry, we can not find any Miracast device. Please be sure that your TV supports Miracast, TV and phone connect to same Wifi.</string>
+    <string name="activity_error_screen_back_text">Notice will close automatically in</string>
+
+    <!--  gallery  -->
+    <string name="activity_gallery_name">Gallery</string>
+    <string name="activity_gallery_no_file">Empry folder!</string>
+
+    <!--  setting  -->
+    <string name="setting_share">Share this app</string>
+    <string name="setting_feedback">Feedback to us</string>
+    <string name="setting_rating">Rate this app</string>
+    <string name="setting_policy">Privacy policy</string>
+    <string name="setting_policy_title">Setting</string>
+
+    <!-- rate us  -->
+    <string name="title_popup_rate_us">Rate us</string>
+    <string name="message_popup_rate_us">How do you think about us?</string>
+    <string name="rate_later_text">Maybe later</string>
+    <string name="rate_now_text">Submit</string>
+    <string name="placeholder_popup_rate_us">Write your comment here</string>
+    <string name="thank_you_for_rate_us">Thank you for your opinion about our application.</string>
+
+    <!--  bookmark  -->
+    <string name="activity_bookmark_name">Bookmark</string>
+    <string name="activity_bookmark_no_audio">No audio found</string>
+    <string name="activity_bookmark_no_video">No video found</string>
+    <string name="activity_bookmark_no_photo">No photo found</string>
+
+    <!--  prepare screen  -->
+    <string name="activity_web_link_name">Web link</string>
+    <string name="activity_web_link_note">We only support casting media player - direct link. For example: \nvideo (.mp4, .wav), audio (.mp3), image (.png, .jpeg)</string>
+    <string name="activity_web_link_input_title">Please input your link here</string>
+    <string name="activity_web_link_input_placeholder">https://abc.mp4</string>
+    <string name="activity_web_link_input_empty">Please input your web link first</string>
+    <string name="activity_web_link_input_not_valid">Your web link is not valid. Please use protocol Http or Https.</string>
+    <string name="activity_web_link_protocol_information">Protocol connection: <b>%1$s</b></string>
+    <string name="activity_web_link_format_information">Format link: <b>%1$s</b></string>
+    <string name="activity_web_link_format_type_video">Video (%1$s)</string>
+    <string name="activity_web_link_format_type_photo">Photo (%1$s)</string>
+    <string name="activity_web_link_format_type_audio">Audio (%1$s)</string>
+
+    <!--  history  -->
+    <string name="activity_history_name">History</string>
+    <string name="activity_history_no_audio">No audio found</string>
+    <string name="activity_history_no_video">No video found</string>
+    <string name="activity_history_no_photo">No photo found</string>
+
+    <!--  iptv  -->
+    <string name="activity_iptv_select_category">Select category</string>
+    <string name="activity_iptv_select_channel">Select channel</string>
+    <string name="activity_iptv_download_link">https://iptv-org.github.io/iptv/categories/%1$s.m3u</string>
+    <string name="activity_iptv_no_channel_found">No channel found</string>
+
+    <!--  play  -->
+    <string name="play_by_chrome_cast">Open by Chromecast</string>
+    <string name="play_by_mirror_cast">Open by Mirror Player</string>
+    <string name="play_select_type">Select play option</string>
+    <string name="play_can_not_cast_this_video">Can not this file due to invalid file format. You can try with Mirror Player</string>
+    <!--  player  -->
+    <string name="activity_player_not_valid_file">We only support casting Image, Video and Music file. Please choose other file. Thank you!</string>
+    <string name="activity_player_watch_movie_need_use_3g">You are not connected to WIFI. Application will use 3G - LTE data to watch movie.</string>
+    <string name="activity_player_notice_about_lock_control">Press Back button or long touch to screen to unlock.</string>
+    <string name="activity_player_notice_about_full_screen_control">Press Back button to unlock screen.</string>
+    <string name="activity_player_notice_about_unlock_control">Exit lock mode. You can control player now.</string>
+    <string name="activity_player_loading_video_text">Preparing video</string>
+    <string name="activity_player_loading_web_text">Preparing website</string>
+    <string name="activity_player_can_not_play_video">Error video. Do you want to reload?</string>
+    <string name="activity_player_reload_text">Reload</string>
+    <string name="activity_player_nothing_to_play">Nothing to play. Player exit.</string>
+    <string name="activity_player_notice_about_web_view_not_response">This website is not responding. Press Back to exit.</string>
+    <string name="activity_player_can_not_connect_to_miracast">Can not connect to Miracast device. Please be sure that TV and Phone connect to same Wifi.</string>
+    <string name="activity_player_connect_to_miracast_success">Connect to Miracast device success.</string>
+    <string name="activity_player_swipe_to_next">You can swipe to left or right for previous or next image.</string>
+
+</resources>

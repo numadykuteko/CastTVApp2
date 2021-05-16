@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="anim_long_length">2000</integer>
+    <integer name="anim_super_long_length">3000</integer>
+    <integer name="anim_medium_length">1000</integer>
+    <integer name="anim_short_length">500</integer>
+    <integer name="time_change_theme_at_home">5000</integer>
+    <integer name="anim_fast_length">200</integer>
+    <integer name="pull_refresh_margin_top">20</integer>
+    <integer name="pull_refresh_max_range">50</integer>
+    <item name="image_ratio" type="dimen" format="float">1.8</item>
+</resources>
