@@ -808,7 +808,9 @@ public abstract class BaseBindingActivity<T extends ViewDataBinding, V extends B
 
             @Override
             public void onSubmit(String review) {
-                FirebaseUtils.sendEventFunctionUsed(BaseBindingActivity.this, "User feedback", review);
+                if (review != null && review.length() > 0) {
+                    FirebaseUtils.sendEventFunctionUsed(BaseBindingActivity.this, "User feedback", review);
+                }
                 ToastUtils.showMessageShort(BaseBindingActivity.this, getString(R.string.thank_you_for_rate_us));
                 DataManager dataManager = DataManager.getInstance(getApplicationContext());
                 dataManager.setRatingUsDone();

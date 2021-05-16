@@ -3,7 +3,7 @@ package com.cast.tv.screen.mirroring.iptv.constants;
 public class AppConstants {
     public static final String LOG_APP = "CAST";
 
-    public static final String CAST_APPLICATION_ID = "2DDD3FE2";  //CastMediaControlIntent.DEFAULT_MEDIA_RECEIVER_APPLICATION_ID;
+    public static final String CAST_APPLICATION_ID = "7F1B51B3";  //CastMediaControlIntent.DEFAULT_MEDIA_RECEIVER_APPLICATION_ID;
 
     public static final int FLAG_START_HOME_ACTIVITY = 0;
     public static final int FLAG_START_SHARE_ACTIVITY = 1;
