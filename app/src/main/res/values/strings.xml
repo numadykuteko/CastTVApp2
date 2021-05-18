@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cast Tv App</string>
+    <string name="app_name">CastTvApp</string>
 
     <string name="header_error_text">Oops…</string>
     <string name="error_text">Sorry…</string>
